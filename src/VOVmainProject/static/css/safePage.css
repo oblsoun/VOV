@@ -1,0 +1,62 @@
+* { letter-spacing: -0.5px; }
+body>* { font-family: 'GmarketSans'; } 
+button{ cursor: pointer; font-family: 'GmarketSans';}
+.btn-box .btn-open {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 80px auto 0;
+    line-height: 50px;
+    background: #333;
+    text-align: center;
+}
+.btn-box .btn-open span {
+    color: #fff;
+}
+.modal {display:none;width:100%;height:100%;position:fixed;top:0;left:0;right:0;background: rgba(0, 0, 0, 0.6);z-index:999;}
+.modal-wrap {
+    border: 1px solid black;
+    display:flex;
+    justify-content: center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:490px;
+    height:630px;
+    z-index:1000;
+    background-color: #fff;
+}
+.modal-wrap img {
+    max-width: 30%; 
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+    margin-top: 50px; 
+}
+.modal-wrap p {
+    color: #252B42;
+    font-size: 30px;
+    margin-top: 50px; 
+    margin-bottom: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.safe-text {
+    color: #2AA34C; /* "위험" 텍스트의 색상을 빨간색으로 설정합니다. */
+}
+#safe_check {
+    width: 440px; height: 60px;
+    background-color: #375EFE;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; 
+    margin-top: 188px;
+}
+#safe_check:hover {
+    background-color: #FF6709;
+}

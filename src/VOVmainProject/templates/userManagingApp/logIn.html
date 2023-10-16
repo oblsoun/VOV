@@ -1,0 +1,36 @@
+{% load socialaccount %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/logIn.css' %}"> <!-- CSS 파일 경로를 수정하세요 -->
+    <title>로그인</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <a href="indexLogOut.html">
+            <img src="{% static 'images/logoRemoveBG.png' %}" alt="VOV 로고">
+            </a>
+        </div>
+        <form action='' method="POST">
+            {% csrf_token %}
+            <label for="userid">아이디</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" name="password" required>
+            <!-- 오류 메시지 출력 -->
+            <p class="error-message" style="color:red">{{ error_message  }}</p>
+            <button type="submit" id="login-button">로그인</button>
+        </form>
+        
+        <div class="line-with-text">
+            <hr> 
+            <div class="centered-text">SNS 소셜 로그인</div>
+        </div>
+        <button class="signup-button"><a href="{% url 'userManagingApp:signup' %}">회원가입</a></button>
+    </div>
+</body>
+</html>

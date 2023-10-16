@@ -1,0 +1,196 @@
+<mxfile host="65bd71144e">
+    <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
+        <mxGraphModel dx="752" dy="283" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-1" value="Actor" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};flipH=0;" parent="1" vertex="1">
+                    <mxGeometry x="61" y="80" width="100" height="1160" as="geometry"/>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-2" value="Front" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};flipH=0;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="80" width="100" height="1160" as="geometry"/>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-3" value="1. &amp;lt;실시간&amp;gt; 버튼 클릭" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="110.44736842105272" y="178" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="229" y="178"/>
+                        </Array>
+                        <mxPoint x="319.5000000000002" y="178" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-4" value="Back" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+                    <mxGeometry x="481" y="80" width="100" height="1160" as="geometry"/>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-5" value="DB" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+                    <mxGeometry x="691" y="80" width="100" height="1160" as="geometry"/>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-6" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;실시간&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="375" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-7" value="2. 캠 화면 표시" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="110" y="210" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="245" y="210"/>
+                        </Array>
+                        <mxPoint x="320" y="210" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-8" value="3. &amp;lt;녹화&amp;gt; 버튼 시작&amp;amp;종료 클릭" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="110" y="239" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="228" y="239"/>
+                        </Array>
+                        <mxPoint x="319" y="239" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-9" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;3.1. &lt;/font&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;파일 전송&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="320.5" y="269" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="438.5" y="269"/>
+                        </Array>
+                        <mxPoint x="529.5" y="269" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-10" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;3.1.1. 지문 유무 식별&lt;/font&gt;&lt;/font&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="530" y="298" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="530" y="298"/>
+                            <mxPoint x="566" y="298"/>
+                            <mxPoint x="566" y="348"/>
+                        </Array>
+                        <mxPoint x="530" y="348" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-11" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;3.1.2. 지문 후처리&lt;/font&gt;&lt;/font&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="530" y="408" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="530" y="408"/>
+                            <mxPoint x="566" y="408"/>
+                            <mxPoint x="566" y="458"/>
+                        </Array>
+                        <mxPoint x="530" y="458" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-14" value="3.3. 해당 결과값 표시 및&lt;br&gt;다운로드 &amp;amp; 이메일 전송 기능" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="110.5" y="554.95" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="210" y="554.95"/>
+                        </Array>
+                        <mxPoint x="319.5000000000002" y="550.0026315789476" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-15" value="3.2. 파일명 처리 후 파일 전송" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="320" y="510" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="455" y="510"/>
+                        </Array>
+                        <mxPoint x="530" y="510" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-16" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="378" width="758" height="102" as="geometry"/>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-17" value="지문 존재" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="378" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-39" value="4. &amp;lt;촬영&amp;gt; 버튼 클릭" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="110" y="620" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="228" y="620"/>
+                        </Array>
+                        <mxPoint x="319" y="620" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-40" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;4.1. &lt;/font&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;파일 전송&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="320.5" y="650" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="438.5" y="650"/>
+                        </Array>
+                        <mxPoint x="529.5" y="650" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-41" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;4.1.1. 지문 유무 식별&lt;/font&gt;&lt;/font&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="530" y="679" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="530" y="679"/>
+                            <mxPoint x="566" y="679"/>
+                            <mxPoint x="566" y="729"/>
+                        </Array>
+                        <mxPoint x="530" y="729" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-42" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;4.1.2. 지문 후처리&lt;/font&gt;&lt;/font&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="530" y="789" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="530" y="789"/>
+                            <mxPoint x="566" y="789"/>
+                            <mxPoint x="566" y="839"/>
+                        </Array>
+                        <mxPoint x="530" y="839" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-43" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;4.1.3.&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;파일 전송&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="530" y="870" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="648" y="870"/>
+                        </Array>
+                        <mxPoint x="739" y="870" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-44" value="4.1.1.1.&lt;br&gt;파일 저장" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry x="-0.0027" relative="1" as="geometry">
+                        <mxPoint x="740" y="900" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="740" y="900"/>
+                            <mxPoint x="776" y="900"/>
+                            <mxPoint x="776" y="950"/>
+                        </Array>
+                        <mxPoint x="740" y="950" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-45" value="4.3. 해당 결과값 표시 및&lt;br&gt;다운로드 &amp;amp; 이메일 전송 기능" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="111" y="1059.95" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="210" y="1059.95"/>
+                        </Array>
+                        <mxPoint x="319.5000000000002" y="1055.0026315789476" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-46" value="4.2. 파일명 처리 후 파일 전송" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="320" y="1020" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="455" y="1020"/>
+                        </Array>
+                        <mxPoint x="530" y="1020" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-47" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="759" width="758" height="221" as="geometry"/>
+                </mxCell>
+                <mxCell id="MVZKXQTWcWdbA9M92NKf-48" value="지문 존재" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="759" width="60" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

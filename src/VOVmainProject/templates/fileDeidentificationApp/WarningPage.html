@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/warningPage.css' %}?ver=2">
+    <title>Warning Page</title>
+</head>
+<body>
+    <form action="" method="POST" onsubmit="return joinSubmit(event)"> 
+    {% csrf_token %}
+     <div id="wrap">
+        <section class="content">
+            <div class="container">
+                <div class="btn-box">
+                    <a href="#" class="btn-open" onClick="popOpen();">
+                        <span>파일 업로드</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+<!-- modal 영역 -->
+<div class="modal">
+    <div class="modal-wrap">
+        <div><img src="../../static/icon/warning.png" alt="경고 이미지"></div>
+        <p>당신의 파일은 <span class="danger-text">위험</span>합니다!<p>
+        <div class="radio1">
+            <input type="radio" id="radioButton1" name="radioGroup" onclick="enableEmailInput()">
+            <label for="radioButton1">안전해진 파일이 첨부파일로 전송됩니다.</label>
+        </div>
+        <div class="email">
+            <label for="email"></label>
+            <div class="input-email">
+                <input type="email" id="email" name="email" disabled> <!-- 처음에는 비활성화된 상태로 설정 -->
+                <button type="button" class="email-button" id="email-button" onclick="sendVerificationCode()" formaction="{% url 'userManagingApp:send_email' %}">전송</button>
+                <img src="../../static/icon/check.png" class="email_check_success" alt="로딩 중" id="email_check_success" style="display:none; margin: 0;">
+            </div>
+        </div>
+        <div class="radio2">
+            <input type="radio" id="radioButton2" name="radioGroup">
+            <label for="radioButton2">안전해진 파일이 로컬 디렉토리에 저장됩니다.</label>
+        </div>
+        <button type="submit" id="file_save" onClick="popClose();">저장</button>
+    </form> 
+</div>
+<!-- JavaScript 파일 추가 -->
+<script src="{% static 'js/warningPage.js' %}?ver=2"></script>
+</body>
+</html>
+

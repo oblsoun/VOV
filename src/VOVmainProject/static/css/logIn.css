@@ -1,0 +1,151 @@
+* { letter-spacing: -0.5px; }
+
+body>* { font-family: 'GmarketSans'; } 
+button{ cursor: pointer; font-family: 'GmarketSans';}
+
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gmarket Sans';
+}
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5%;
+}
+
+p { text-align: center; }
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 370px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* .container 클래스 포커스 상태 스타일 */
+input:focus {
+    outline: none; /* 포커스 효과를 제거합니다. */
+    border: 3px solid #C3DBF9 ;
+}
+
+#login-button {
+    background-color: #375EFE;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px 10px 20px;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+#login-button:hover {
+    background-color: #FF6709;
+}
+
+#login-button a {
+    color: inherit; /* 부모 요소의 글자색을 상속받음 */
+    text-decoration: none; /* 링크 텍스트에 밑줄 제거 */
+    cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능함을 나타냄 */
+  }
+  
+#login-button a a:focus,
+#login-button a:active {
+outline: none; /* 포커스 효과 제거 */
+color: inherit; /* 클릭 시에도 부모 요소의 글자색을 상속받음 */
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto; /* 로고 이미지를 가로 중앙 정렬 */
+    width: 150px; /* 로고 이미지의 너비 조정 */
+    height: auto; /* 높이를 자동으로 조정하여 비율 유지 */
+    margin-bottom: 50px; 
+}
+
+/* 수평 선 스타일링 */
+hr {
+    border: none; /* 기본 선 제거 */
+    border-top: 1px solid #ccc; /* 원하는 선 스타일 및 색상 지정 */
+    margin: 0; /* 선 위아래 여백 제거 */
+}
+
+/* 선과 텍스트를 감싸는 div 스타일링 */
+.line-with-text {
+    text-align: center; /* 가운데 정렬 */
+    position: relative; /* 상대 위치 설정 */
+}
+
+/* 선 아래에 텍스트 스타일링 */
+.centered-text {
+    position: absolute; /* 절대 위치 설정 */
+    top: 50%; /* 세로 중앙 정렬 */
+    left: 50%; /* 가로 중앙 정렬 */
+    transform: translate(-50%, -50%); /* 텍스트를 가운데로 이동 */
+    background-color: #f2f2f2; /* 텍스트 배경색 (선택 사항) */
+    padding: 0 5px; /* 텍스트 주변에 여백 추가 (선택 사항) */
+    font-size: 14px;
+}
+
+/* 아이콘과 이미지를 감싸는 div 스타일링 */
+.sns-login-icons {
+    text-align: center; /* 가운데 정렬 */
+    margin-top: 30px; /* 아이콘 위에 여백 설정 (선택 사항) */
+}
+
+/* 아이콘 스타일링 */
+.sns-login-icons img {
+    width: 60px; /* 이미지 너비 설정 */
+    margin: 0 10px; /* 아이콘 사이 여백 설정 (선택 사항) */
+    vertical-align: middle; /* 이미지를 수직 가운데 정렬 */
+    margin-bottom: 20px;
+}
+
+.sns-login-icons button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* 회원가입 버튼 스타일링 */
+.signup-button {
+    width: 100%; /* 버튼의 가로 너비를 100%로 설정하여 부모 요소에 맞춤 */
+    padding: 15px 20px 10px 20px; /* 버튼 내 여백 설정 (선택 사항) */
+    margin-top: 10px; /* 버튼 위에 여백 설정 (선택 사항) */
+    font-size: 18px; /* 버튼 텍스트 크기 설정 (선택 사항) */
+    color: #252B42; /* 버튼 텍스트 색상 설정 (선택 사항) */
+    border: 1px solid #BEBEBE;
+    border-radius: 5px; /* 버튼 모서리를 둥글게 설정 (선택 사항) */
+}
+
+/* 회원가입 버튼에 호버 효과 추가 (선택 사항) */
+.signup-button:hover {
+    font-weight: 600;
+}
+
+.signup-button a {
+    color: inherit; /* 부모 요소의 글자색을 상속받음 */
+    text-decoration: none; /* 링크 텍스트에 밑줄 제거 */
+    cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능함을 나타냄 */
+  }
+  
+.signup-button a a:focus,
+.signup-button a:active {
+outline: none; /* 포커스 효과 제거 */
+color: inherit; /* 클릭 시에도 부모 요소의 글자색을 상속받음 */
+}
+

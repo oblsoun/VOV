@@ -1,0 +1,181 @@
+* { 
+  padding: 0; border: 0; list-style: none; margin: 0;
+  text-decoration: none;  box-sizing: border-box; letter-spacing: -0.5px;
+}
+  
+button { cursor: pointer; font-family: 'GmarketSans'; }
+body>* { margin: 0 auto; font-family: 'GmarketSans'; } 
+
+/* 헤더 */
+header {
+  width: 1400px; height: 100px;
+  color: #737373;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 100px;
+  margin: 0 auto;
+}
+
+.logo img {
+  cursor: pointer;
+}
+
+.logo a {
+  color: inherit; /* 부모 요소의 글자색을 상속받음 */
+  text-decoration: none; /* 링크 텍스트에 밑줄 제거 */
+  cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능함을 나타냄 */
+}
+
+.logo a a:focus,
+.logo a:active {
+  outline: none; /* 포커스 효과 제거 */
+  color: inherit; /* 클릭 시에도 부모 요소의 글자색을 상속받음 */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-left: 30px;
+}
+
+nav ul li { margin-right: 100px; }
+nav ul li:last-child { margin-right: 0; }
+nav a {
+  text-decoration: none;
+  color: #737373;
+  width: 80px;
+}
+
+nav a:hover {
+  color: #252B42; /* 원하는 색상으로 변경 */
+  text-decoration: underline; /* 밑줄 추가 */
+}
+
+.header-buttons button.login-button {
+  background: none;
+  border: solid #fff;
+  color: #737373;
+  padding: 10px 20px;
+  margin-right: 2px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.header-buttons button.login-button:hover {
+  color: #252B42; /* 원하는 색상으로 변경 */
+  text-decoration: underline; /* 밑줄 추가 */
+}
+
+.login-button a {
+  color: inherit; /* 부모 요소의 글자색을 상속받음 */
+  text-decoration: none; /* 링크 텍스트에 밑줄 제거 */
+  cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능함을 나타냄 */
+}
+
+.login-button a:focus,
+.login-button a:active {
+  outline: none; /* 포커스 효과 제거 */
+  color: inherit; /* 클릭 시에도 부모 요소의 글자색을 상속받음 */
+}
+
+
+.header-buttons button.signup-button {
+  width: 120px; height: 50px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #DEE1E3;
+  color: #737373;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.signup-button a {
+  color: inherit; /* 부모 요소의 글자색을 상속받음 */
+  text-decoration: none; /* 링크 텍스트에 밑줄 제거 */
+  cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능함을 나타냄 */
+}
+
+.signup-button a:focus,
+.signup-button a:active {
+  outline: none; /* 포커스 효과 제거 */
+  color: inherit; /* 클릭 시에도 부모 요소의 글자색을 상속받음 */
+}
+
+.header-buttons button.signup-button:hover {
+  color: #252B42; /* 원하는 색상으로 변경 */
+  text-decoration: underline; /* 밑줄 추가 */
+}
+
+#container { height: 1880px; }
+  .content1 { height: 900px; }
+  .con1 { width: 1400px; height: 980px; display: flex; margin: 0 auto;  margin-top: 135px; }
+ 
+
+  /* 드로그 앤 드롭 박스 */
+  .drop-zone { 
+            border-radius:10px;  border: 5px solid#D0D9FE; margin:0 auto; width: 697px; height: 697px;
+            margin: 0 auto; border-style: dashed; }
+  .drop-zone ul { margin: 150px 8px; width: 670px;  }
+
+  /*드로그 앤 드롭 - 드롭 반응 */
+  .drop-zone.active {
+    background: #ddd;
+  }
+
+  .drop-zone h1 {
+    font-size: 1.8rem;
+  }
+
+  .custom-file-button {
+    display: inline-block;
+    background-color: #375EFE; color: white;
+    width: 513px; height: 70px;
+    border-radius:40px; margin:60px 80px;
+    cursor:pointer;
+    text-align: center;
+    vertical-align: middle; /*이거 왜 적용 안되지?*/
+  }
+  .custom-file-button:hover {
+    background-color: #0056b3
+  }
+
+/* 사용방법 알려드립니다 Box */
+  .content2 { width: 100%; height: 900px; background: #EEF1F6; }
+  .con2 { border: 1px solid #EEF1F6;; width: 100%; height: 274px; text-align: center;  margin:0 ; }
+  .con2 ul {  margin-top: 85px; }
+  .con2 li { height: 50px; }
+  .con2 li:nth-of-type(1){ font-size: 24px; color: #375EFE; }
+  .con2 li:nth-of-type(2){ font-size: 30px;  color: #252B42; font-weight: bold; } 
+
+  .con2-box { width: 1400px;  margin: 0 auto; }
+  .con2-box ul{ display: flex; justify-content: space-between; /* 이미지 사이에 동일한 간격 생성 */
+                margin-left: 0px;}
+
+  .con2-box li { flex: 1;}
+  .con2-box>div li { margin-top: 40px; }
+  
+
+  .con2-list strong{ color: #375EFE; line-height: 20px; font-size: 20px; }
+  .con2-list p { margin-top: 10px; font-size: 16px; }
+  
+  .text-with-image {
+    display: flex;
+    align-items: center; /* 세로 중앙 정렬 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  
+  .text-with-image img {
+    margin-right: 10px; /* 이미지와 텍스트 사이 간격 조절 */
+    margin-bottom: 10px;
+  }
+  
+/* 푸터 */
+#footer { width: 1400px;  height: 450px; margin: 0 auto; margin-top: 200px; } 
+#footer>div { margin-top: 100px; color: #737373; }
+#footer p:nth-of-type(2){ line-height: 30px; margin-top: 40px; }
+#footer p:nth-of-type(3){ margin-top: 40px; font-weight: bold; }

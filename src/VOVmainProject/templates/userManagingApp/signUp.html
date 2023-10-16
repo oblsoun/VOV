@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/signUp.css' %}">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>회원가입</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <a href="indexLogOut.html">
+            <img src="{% static 'images/logo.jpg' %}" alt="VOV 로고">
+            </a>
+        </div>
+        <h1>회원가입</h1>
+       <form action="" method="POST" onsubmit="return joinSubmit(event)"> 
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="userid">아이디</label>
+                <div class="input-with-button">
+                    <input type="text" class="username_input" id="username" name="username" check_result="fail" onkeyup="checkUsernameFormat()" >
+                    <button type="button" class="id_overlap_button" id="id_overlap_button" onclick="id_overlap_check()" >중복검사</button>
+                    <img src="{% static 'icon/check.png' %}" class="id_check_success" alt="로딩 중" id="id_check_success" style="display:none;"> 
+                </div>
+                <p id="id-regexp-error-message" style="color: red; display: none;">아이디는 영어로 4글자 이상으로 이루어져야 합니다.</p>
+            </div>
+            <div class="form-group">
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" name="password" onkeyup="checkPasswordMatch()" >
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">비밀번호 확인</label>
+                <input type="password" id="confirm_password" name="confirm_password" onkeyup="checkPasswordMatch()" >
+                <img src="{% static 'icon/check.png' %}" class="pwd_check_success" alt="로딩 중" id="pwd_check_success" style="display:none;">
+                <p id="password-error-message" style="color: red; display: none;">비밀번호가 일치하지 않습니다.</p>
+                <p id="password-regexp-error-message" style="color: red; display: none;">비밀번호는 4글자 이상으로 이루어져야합니다.</p>
+            </div>
+            <div class="form-group">
+                <label for="nickname">이름</label>
+                <input type="text" id="nickname" name="nickname" >
+            </div>
+            <div class="form-group">
+                <label for="email">이메일</label>
+                <div class="input-with-button">
+                    <input type="email" id="email" name="email" >
+                    <button type="button" class="email-button" id="email-button" onclick="sendVerificationCode()" formaction="{% url 'userManagingApp:send_email' %}">코드전송</button>
+                    <img src="{% static 'icon/check.png' %}" class="email_check_success" alt="로딩 중" id="email_check_success" style="display:none;"> 
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="code">인증코드</label>
+                <div class="input-with-button">
+                    <input type="text" id="code" name="code" class="form_control" >
+                    <button type="button" class="code_button" id="code_button" onclick="checkVerificationCode()">코드확인</button>
+                    <img src="{% static 'icon/check.png' %}" class="code_check_success" alt="로딩 중" id="code_check_success" style="display:none;">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="user-type">사용자 유형</label>
+                <select id="user_type" name="user_type" onchange="updateCategories()">
+                    <option value="" disabled selected hidden>선택하세요</option>
+                    <option value="company">기업</option>
+                    <option value="individual">개인</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="user-category">사용자 구분</label>
+                <select id="user_category" name="user_category">
+                    <!-- 기업 관련 카테고리 -->
+                    <optgroup id="company_categories" label="기업">
+                        <option value="" disabled selected hidden>선택하세요</option>
+                        <option value="management-office">경영, 사무</option>
+                        <option value="finance-insurance">금융, 보험</option>
+                        <option value="education">교육</option>
+                        <option value="media">언론</option>
+                        <option value="entertainment">엔터테인먼트</option>
+                        <option value="law-social-welfare">법률, 사회복지</option>
+                        <option value="police-firefighter-military">경찰, 소방 및 군인</option>
+                        <option value="health-medical">보건, 의료</option>
+                        <option value="art-design">예술, 디자인</option>
+                        <option value="sales">영업, 판매</option>
+                    </optgroup>
+                    <!-- 개인 관련 카테고리 -->
+                    <optgroup id="individual_categories" label="개인" style="display:none;">
+                        <option value="" disabled selected hidden>선택하세요</option>
+                        <option value="office-worker">사무직</option>
+                        <option value="researcher">연구직</option>
+                        <option value="health-medical">보건 의료직</option>
+                        <option value="service">서비스직</option>
+                        <option value="education">교육직</option>
+                        <option value="sales">영업 판매직</option>
+                        <option value="creator">크리에이터</option>
+                        <option value="art-design-broadcasting">예술 디자인 방송직</option>
+                        <option value="student">학생</option>
+                        <option value="unemployed">무직</option>
+                    </optgroup>
+                </select>
+            </div>
+            <button type="submit" id="join_submit" >가입하기</button>
+       
+        </form> 
+    </div>
+    <script src="{% static 'js/signUp.js' %}"></script>
+</body>
+</html>

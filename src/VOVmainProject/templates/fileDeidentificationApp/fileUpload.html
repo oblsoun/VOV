@@ -1,0 +1,398 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/fileUpload.css' %}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+  <link rel="stylesheet" href="{% static 'css/warningPage.css' %}">
+  <title>VOV</title>
+</head>
+
+<body>
+<!--login header-->
+<header>
+  <div class="logo">
+    <a href="{% url 'fileUpload' %}">
+      <img src="{% static 'images/logo.jpg' %}" alt="VOV 로고">
+    </a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="{% url 'fileUpload' %}">사진/동영상</a></li>
+      <li><a href="{% url 'realTimeDeidentificationApp:realTime' %}">실시간</a></li>
+      {% if request.session.user_id %}
+      {% csrf_token %}
+      <li><a href="{% url 'myPhotoApp:myphoto' %}">내사진</a></li>
+      {% endif %}
+    </ul>
+  </nav>
+  <div class="header-buttons">
+    {% if request.session.user_id %}
+    {% csrf_token %}
+      <button class="login-button"><a href="{% url 'userManagingApp:logout' %}">로그아웃</a></button>
+      <button class="signup-button"><a href="{% url 'userManagingApp:myPage' %}">마이페이지</a></button>
+    {% else %}
+    {% csrf_token %}
+      <div class="header-buttons">
+      <button class="login-button"><a href="{% url 'userManagingApp:login' %}">로그인</a></button>
+      <button class="signup-button"><a href="{% url 'userManagingApp:signup' %}">회원가입</a></button>
+    </div>
+    {% endif %}
+  </div>
+</header>
+
+<!--content-->
+<div id="container">
+  <div class="content">
+    <div class="con1">
+      <p><img src="{% static 'images/person.jpg' %}" alt="vov업로드이미지"></p>
+      <form method="post" enctype="multipart/form-data">
+      <!-- <form method="post" enctype="multipart/form-data" action="/fileUpload/upload_images/"> -->
+        {% csrf_token %}
+        {{ form.image }}
+        <!-- <div class="drop-zone">
+          <label for="file" class="custom-file-button">파일 선택</label>
+          <input type="file" id="file" name="file" class="custom-file-input" accept="image/*" multiple style="display: none;">  
+        </div> -->
+        <button type="submit" id="uploadButton">Upload</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="content2">
+    <div class="con2">
+      <ul>
+        <li><p>Service Guide</p></li>
+        <li><p class="text-with-image">
+          <img src="{% static 'images/guide.png' %}" alt="가이드로고">
+          <span>이용방법 알려드립니다</span></p></li>
+      </ul>
+    </div>
+
+    <div class="con2-box">
+      <ul>
+        <li><img src="{% static 'images/img1.png' %}" alt="사용방법 설명 이미지1"></li>
+        <li><img src="{% static 'images/img2.png' %}" alt="사용방법 설명 이미지2"></li>
+        <li><img src="{% static 'images/img3.png' %}" alt="사용방법 설명 이미지3"></li>
+      </ul>
+      <div class="con2-list">
+        <ul>
+          <li><strong>모으기</strong><br>
+            <p>예시를 수집하여 컴퓨터가 학습하기를 원하는 클래스<br>또는
+              카테고리로 그룹화 하세요.</p></li>
+          <li><strong>학습시키기</strong><br>
+            <p>예시를 수집하여 컴퓨터가 학습하기를 원하는 클래스<br>또는
+              카테고리로 그룹화 하세요.</p></li>
+          <li><strong>내보내기</strong><br>
+            <p>예시를 수집하여 컴퓨터가 학습하기를 원하는 클래스<br>또는
+              카테고리로 그룹화 하세요.</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="content3">
+    <div class="con2">
+      <ul>
+        <li><p>Usage figures</p></li>
+        <li><p class="text-with-image">
+          <img src="{% static 'images/guide.png' %}" alt="가이드로고">
+          <span>가 안전하게 한 사진들</span></p></li>
+      </ul>
+    </div>
+    <div class="con2-box">
+      <canvas id="mainChart"></canvas>
+    </div>
+    <div class="con2-box">
+      <canvas id="mainChart2"></canvas>
+    </div>
+    <div class="con2-box">
+      <canvas id="mainChart3"></canvas>
+    </div>
+  </div>
+      <!--알림창-->
+      {% if file_name and file_name != no_file_name %}
+      <div class="modal">
+        <div class="modal-wrap">
+          <div><img src="{% static 'icon/warning.png' %}" alt="경고 이미지"></div>
+          <p>당신의 파일은 <span class="danger-text">위험</span>합니다!</p>
+          <div class="radio1">
+              <input type="radio" id="radioButton1" name="radioGroup" onclick="enableEmailInput()">
+              <label for="radioButton1">안전해진 파일이 첨부파일로 전송됩니다.</label>
+          </div>
+          <div class="email">
+              <label for="email">
+                <div class="input-email">
+                    <input type="email" id="email" name="email" value="{{ user_email }}" disabled> <!-- 처음에는 비활성화된 상태로 설정 -->
+                    <button type="button" class="email-button" id="email-button" onclick="sendVerificationCode()" formaction="{% url 'fileDeidentificationApp:send_email' %}">전송</button>
+                    <img src="{% static 'icon/check.png' %}" class="email_check_success" alt="로딩 중" id="email_check_success" style="display:none; margin: 0;">
+                </div>
+              </label>
+          </div>
+          <div class="radio2">
+              <input type="radio" id="radioButton2" name="radioGroup">
+              <label for="radioButton2">안전해진 파일이 로컬 디렉토리에 저장됩니다.</label>
+          </div>
+          <button type="submit" id="file_save" onClick="performDownloadOperation();">저장</button>
+          <button type="submit" id="file_save" onClick="popClose();">닫기</button>
+        </div> 
+      </div>
+      {% elif file_name != no_file_name %}
+       <div class="modal">
+        <div class="modal-wrap">
+          <div><img src="{% static 'icon/safe.png' %}" alt="경고 이미지"></div>
+          <p>당신의 파일은 <span class="safe-text">안전</span>합니다!</p>
+          <button type="submit" id="safe_check" onClick="popClose();">확인</button>
+        </div>
+      </div>
+      {% endif %}
+  <!--footer-->
+  <footer id="footer">
+    <div>
+      <p><a href="#"><img src="{% static 'images/Footer_logo.png' %}" alt="vov"></a></p>
+
+      <p>NOMERCY 주식회사<br>
+        서울특별시 서초구 서초대로74길 33<br>
+        사업자등록번호 230-10-09270<br>
+        고객상담 : 1588 - 1234</p>
+      <p>Copyright ⓒ VOV Corp. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+<script>
+  function popOpen() {
+    var modalWrap = document.querySelector('.modal-wrap');
+    var modal = document.querySelector('.modal');
+    modalWrap.style.display = 'block';
+    modal.classList.remove('modal');
+  }
+
+  function popClose() {
+    var modalWrap = document.querySelector('.modal-wrap');
+    var modalNone = document.querySelector('.modal');
+    modalWrap.style.display = 'none';
+    modalNone.classList.add('modal');
+  }
+
+  var file_name = "{{ file_name }}";
+
+  document.addEventListener("DOMContentLoaded", function() {
+    if (file_name !== null) {
+      popOpen();
+    }
+  });
+</script>
+<script>
+  // 이메일 전송
+let isEmailSent = false; // 이메일 전송 여부를 저장하는 변수
+function sendVerificationCode() {
+  const email = document.getElementById("email").value;
+  const csrf_token = document.getElementsByName('csrfmiddlewaretoken')[0].value;
+  const emailButton = document.querySelector('.email-button');
+  const emailCheckSuccess = document.getElementById('email_check_success');
+  emailButton.style.display = 'inline-block';
+  emailCheckSuccess.style.display = 'none';
+  // 코드가 입력되지 않았을 경우
+  if (!email) {
+      alert("이메일을 입력해주세요.");
+      return;
+  }
+  if (isEmailSent) {
+      return; // 이미 이메일이 전송된 경우 아무것도 하지 않음
+  }
+  const xhr = new XMLHttpRequest();
+  xhr.open("POST", "/fileUpload/send_email/", true);
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  xhr.setRequestHeader("X-CSRFToken", csrf_token);
+  xhr.onload = function () {
+      if (xhr.status >= 200 && xhr.status < 400) {
+          const data = JSON.parse(xhr.responseText);
+          if ('message' in data) {
+              alert(data.message);
+              emailButton.style.display = 'none';
+              emailCheckSuccess.style.display = 'inline-block';
+              isEmailSent = true; // 이메일 전송 성공 시 변수를 true로 설정
+          } else if ('error' in data) {
+              alert(data.error);
+          }
+      } else {
+          alert("이메일 전송에 실패했습니다.");
+      }
+  };
+  xhr.send("email=" + email);
+}
+
+const emailInput = document.getElementById("email");
+if (emailInput) {
+  emailInput.addEventListener("input", function () {
+    isEmailSent = false; // 이메일이 변경되면 다시 전송 상태로 돌아가도록 변수를 false로 설정
+
+    const successImage = document.getElementById('email_check_success');
+    successImage.style.display = 'none'; // 이미지 숨기기
+
+    const verifyButton = document.querySelector('.email-button');
+    verifyButton.style.display = 'inline-block'; // 버튼 보이기
+  });
+}
+function enableEmailInput() {
+  const radioButton1 = document.getElementById('radioButton1');
+  const radioButton2 = document.getElementById('radioButton2');
+  const emailInput = document.getElementById('email');
+  const emailButton = document.querySelector('.email-button');
+  const emailCheckSuccess = document.getElementById('email_check_success');
+  
+  if (radioButton1.checked) {
+      emailInput.disabled = false;
+      emailInput.style.visibility = 'visible'; // 이메일 입력 필드를 숨기지 않고 보이게 설정
+      emailButton.style.display = 'inline-block';
+      emailCheckSuccess.style.display = 'none';
+  } else if (radioButton2.checked) {
+      emailInput.disabled = true;
+      emailInput.style.visibility = 'hidden'; // 이메일 입력 필드를 숨김
+      emailInput.value = '';
+      emailButton.style.display = 'none';
+      emailCheckSuccess.style.display = 'none';
+  }
+}
+
+const radioBtn1 = document.getElementById("radioButton1");
+const radioBtn2 = document.getElementById("radioButton2");
+if (radioBtn1) {
+  radioBtn1.addEventListener('click', enableEmailInput);
+}
+if (radioBtn2) {
+  radioBtn2.addEventListener('click', enableEmailInput);
+}
+</script>
+<script>
+function saveFileLocally() {
+    fetch('/fileUpload/download/', {
+        method: 'GET',
+        headers: {
+            'X-CSRFToken': getCookie('csrftoken'),
+        },
+    })
+    .then(response => {
+        if (response.ok) {
+            alert('안전한 이미지가 바탕화면에 저장되었습니다!');
+        } else {
+            console.error('Failed to download file.');
+        }
+    })
+    .catch(error => {
+        console.error('Error during file downloading:', error);
+    });
+}
+
+    function getCookie(name) {
+        var value = "; " + document.cookie;
+        var parts = value.split("; " + name + "=");
+        if (parts.length == 2) return parts.pop().split(";").shift();
+    }
+
+    function performDownloadOperation() {
+        saveFileLocally();
+        popClose();
+  }
+</script>
+<script>
+var total_values = parseInt("{{ total_values }}");
+var danger_values = parseInt("{{ danger_values }}");
+var safe_values = parseInt("{{ safe_values }}");
+var member_values = parseInt("{{ member_values }}");
+var nomember_values = parseInt("{{ nomember_values }}");
+
+
+  const ctx = document.getElementById('mainChart').getContext('2d');
+  const mainChart = new Chart(ctx, {
+      type: 'pie',
+      data: {
+          labels: ['safe Picture', 'danger Picture'],
+          datasets: [{
+              label: '작업량',
+              data: [safe_values, danger_values],
+              backgroundColor: [
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(255, 99, 132, 0.2)'
+              ],
+              borderColor: [
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(255, 99, 132, 1)'
+              ],
+              borderWidth: 1
+          }]
+      },
+      options: {
+          scales: {
+              y: {
+                  beginAtZero: true
+              }
+          }
+      }
+  });
+  const ctx2 = document.getElementById('mainChart2').getContext('2d');;
+  const mainChart2 = new Chart(ctx2, {
+      type: 'bar',
+      data: {
+          labels: ['Total', '회원', '비회원'],
+          datasets: [{
+              label: '작업량',
+              data: [total_values, member_values, nomember_values],
+              backgroundColor: [
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(75, 192, 192, 0.2)',
+                  'rgba(255, 159, 64, 0.2)'
+              ],
+              borderColor: [
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(75, 192, 192, 1)',
+                  'rgba(255, 159, 64, 1)'
+              ],
+              borderWidth: 1
+          }]
+      },
+      options: {
+          scales: {
+              y: {
+                  beginAtZero: true
+              }
+          }
+      }
+  });
+  const ctx3 = document.getElementById('mainChart3').getContext('2d');;
+  const mainChart3 = new Chart(ctx3, {
+      type: 'bar',
+      data: {
+          labels: ['크리에이터', '학생', '서비스직', '교육직', '연구직'],
+          datasets: [{
+              label: '개인에서 가장 많이 이용한',
+              data: [29, 23, 13, 5, 3],
+              backgroundColor: [
+                  'rgba(255, 99, 132, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(255, 206, 86, 0.2)',
+                  'rgba(75, 192, 192, 0.2)',
+                  'rgba(153, 102, 255, 0.2)'
+              ],
+              borderColor: [
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(255, 206, 86, 1)',
+                  'rgba(75, 192, 192, 1)',
+                  'rgba(153, 102, 255, 1)'
+              ],
+              borderWidth: 1
+          }]
+      },
+      options: {
+          scales: {
+              y: {
+                  beginAtZero: true
+              }
+          }
+      }
+  });
+  </script>

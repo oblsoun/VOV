@@ -1,0 +1,141 @@
+* { letter-spacing: -0.5px; }
+body>* { font-family: 'GmarketSans'; } 
+button{ cursor: pointer; font-family: 'GmarketSans';}
+.btn-box .btn-open {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 80px auto 0;
+    line-height: 50px;
+    background: #333;
+    text-align: center;
+}
+.btn-box .btn-open span {
+    color: #fff;
+}
+.modal {display:none;width:100%;height:100%;position:fixed;top:0;left:0;right:0;background: rgba(0, 0, 0, 0.6);z-index:999;}
+.modal-wrap {
+    border: 1px solid black;
+    display:flex;
+    justify-content: center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:490px;
+    height:630px;
+    z-index:1000;
+    background-color: #fff;
+}
+.modal-wrap img {
+    max-width: 30%; 
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+    margin-top: 50px; 
+}
+.modal-wrap p {
+    color: #252B42;
+    font-size: 30px;
+    margin-top: 50px; 
+    margin-bottom: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.danger-text {
+    color: red; /* "위험" 텍스트의 색상을 빨간색으로 설정합니다. */
+}
+.radio1 input[type="radio"],
+.radio2 input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #777777;
+    outline: none;
+    margin-left: 21px;
+    margin-right: 10px;
+    vertical-align: middle; /* 추가된 스타일 */
+}
+.radio1 input[type="radio"]:checked,
+.radio2 input[type="radio"]:checked {
+    background-color: #375EFE; /* 라디오 버튼이 선택되었을 때 배경색을 초록색으로 변경 */
+}
+.radio1 label,
+.radio2 label {
+    vertical-align: middle; /* 추가된 스타일 */
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 330px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 30px;
+    margin-left: 21px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* .container 클래스 포커스 상태 스타일 */
+input:focus {
+    outline: none; /* 포커스 효과를 제거합니다. */
+    border: 3px solid #C3DBF9 ;
+}
+button[type="button"] {
+    width: 80px;
+    padding: 10px;
+    color: #001777;
+    background-color: #ffffff;
+    border: 1px solid #375EFE;
+    border-radius: 3px;
+    cursor: pointer;
+    position: flex;
+    margin-left: 10px;
+    font-style: normal;
+    /* identical to box height */
+    letter-spacing: -0.05em;
+    font-size: 16px;
+    height: 50px;
+}
+button[type="button"]:hover {
+    font-weight: bold;
+    border: 2px solid #375EFE;
+}
+#file_save {
+    width: 440px; height: 60px;
+    padding: 20px;
+    background-color: #375EFE;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; 
+    margin-left: 25px;
+    margin-top: 50px;
+}
+#file_save:hover {
+    background-color: #FF6709;
+}
+.safe-text {
+    color: #2AA34C; /* "위험" 텍스트의 색상을 빨간색으로 설정합니다. */
+}
+#safe_check {
+    width: 440px; height: 60px;
+    background-color: #375EFE;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; 
+    margin-top: 188px;
+}
+#safe_check:hover {
+    background-color: #FF6709;
+}

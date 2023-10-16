@@ -1,0 +1,128 @@
+
+
+* { letter-spacing: -0.5px; }
+body>* { font-family: 'GmarketSans'; } 
+button{ cursor: pointer; font-family: 'GmarketSans';}
+button a { 
+    text-decoration: none; /* 링크 텍스트에 밑줄 제거 */
+    cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능함을 나타냄 */
+    outline: none; /* 포커스 효과 제거 */
+    color: inherit; /* 클릭 시에도 부모 요소의 글자색을 상속받음 */
+}
+
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+    background-color: #ffffff;
+    padding: 5%;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #252B42;
+    margin-bottom: 60px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 370px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 30px;
+}
+
+/* .container 클래스 포커스 상태 스타일 */
+input:focus {
+    outline: none; /* 포커스 효과를 제거합니다. */
+    border: 3px solid #C3DBF9 ;
+}
+
+select {
+    width: 390px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 55px;
+    margin-bottom: 30px;
+    font-family: 'GmarketSans';
+}
+select:focus {
+    outline: none; /* 포커스 효과를 제거합니다. */
+    border: 3px solid #C3DBF9 ;
+    font-size: 16px;
+}
+
+button[type="button"] {
+    width: 100px;
+    padding: 10px;
+    color: #001777;
+    background-color: #ffffff;
+    border: 1px solid #375EFE;
+    border-radius: 3px;
+    cursor: pointer;
+    position: flex;
+    margin-left: 10px;
+    font-style: normal;
+    /* identical to box height */
+    letter-spacing: -0.05em;
+    font-size: 16px;
+    height: 50px;
+}
+
+button[type="button"]:hover {
+    font-weight: bold;
+    border: 2px solid #375EFE;
+}
+
+#join_submit {
+    width: 500px; height: 60px;
+    padding: 20px;
+    background-color: #375EFE;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#join_submit:hover {
+    background-color: #FF6709;
+}
+
+.input-with-button {
+    display: flex;
+    align-items: center;
+   
+}
+
+.logo {
+    display: block;
+    margin-left: 165px;
+    width: 150px; /* 로고 이미지의 너비 조정 */
+    height: auto; /* 높이를 자동으로 조정하여 비율 유지 */
+    margin-bottom: 60px; /* 로고와 회원가입 제목 사이의 간격 조정 */
+}
+

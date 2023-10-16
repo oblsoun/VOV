@@ -1,0 +1,245 @@
+* { 
+  padding: 0; border: 0; list-style: none; margin: 0;
+  text-decoration: none;  box-sizing: border-box; letter-spacing: -0.5px;}
+  button { cursor: pointer; font-family: 'GmarketSans'; }
+  body>* { margin: 0 auto; font-family: 'GmarketSans'; } 
+
+/* 헤더 */
+header {
+  width: 1400px; height: 100px;
+  color: #737373;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 100px;
+  margin: 0 auto;
+}
+
+.logo img {
+  cursor: pointer;
+}
+
+.logo a {
+  color: inherit; /* 부모 요소의 글자색을 상속받음 */
+  text-decoration: none; /* 링크 텍스트에 밑줄 제거 */
+  cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능함을 나타냄 */
+}
+
+.logo a a:focus,
+.logo a:active {
+  outline: none; /* 포커스 효과 제거 */
+  color: inherit; /* 클릭 시에도 부모 요소의 글자색을 상속받음 */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-left: 30px;
+}
+
+nav ul li { margin-right: 100px; }
+nav ul li:last-child { margin-right: 0; }
+nav a {
+  text-decoration: none;
+  color: #737373;
+  width: 80px;
+}
+
+nav a:hover {
+  color: #252B42; /* 원하는 색상으로 변경 */
+  text-decoration: underline; /* 밑줄 추가 */
+}
+
+.header-buttons button.login-button {
+  background: none;
+  border: solid #fff;
+  color: #737373;
+  padding: 10px 20px;
+  margin-right: 2px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.header-buttons button.login-button:hover {
+  color: #252B42; /* 원하는 색상으로 변경 */
+  text-decoration: underline; /* 밑줄 추가 */
+}
+
+.login-button a {
+  color: inherit; /* 부모 요소의 글자색을 상속받음 */
+  text-decoration: none; /* 링크 텍스트에 밑줄 제거 */
+  cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능함을 나타냄 */
+}
+
+.login-button a:focus,
+.login-button a:active {
+  outline: none; /* 포커스 효과 제거 */
+  color: inherit; /* 클릭 시에도 부모 요소의 글자색을 상속받음 */
+}
+
+
+.header-buttons button.signup-button {
+  width: 120px; height: 50px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #DEE1E3;
+  color: #737373;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.signup-button a {
+  color: inherit; /* 부모 요소의 글자색을 상속받음 */
+  text-decoration: none; /* 링크 텍스트에 밑줄 제거 */
+  cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능함을 나타냄 */
+}
+
+.signup-button a:focus,
+.signup-button a:active {
+  outline: none; /* 포커스 효과 제거 */
+  color: inherit; /* 클릭 시에도 부모 요소의 글자색을 상속받음 */
+}
+
+.header-buttons button.signup-button:hover {
+  color: #252B42; /* 원하는 색상으로 변경 */
+  text-decoration: underline; /* 밑줄 추가 */
+}
+
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.pageTitle {
+  width: 1400px;
+  height: 200px;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #252B42;
+  margin-bottom: 60px;
+  margin-top: 80px;
+}
+
+.container {
+  background-color: #F2F2F2; 
+  width: 1400px;
+}
+
+/* 웹캠 영상 스타일링 */
+#webcam {
+  width: 100%; /* 웹캠 영상 가로 크기 100% */
+  max-width: 100%; /* 최대 가로 크기 설정 */
+  height: auto; /* 세로 크기 자동 조정 */
+}
+
+.real-time {
+  margin-left: 375px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  width: 650px;
+  background-color: #ffffff;
+  padding: 5%;
+  border-radius: 5px;
+}
+
+.webcam-icon ul {
+  display: flex;
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.webcam-icon img{
+  margin-top: 50px;
+  width: 70px;
+  margin-right: 50px; /* 오른쪽 여백을 10px로 설정 */
+
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 390px;
+  padding: 24px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  height: 30px;
+}
+
+/* .container 클래스 포커스 상태 스타일 */
+input:focus {
+  outline: none; /* 포커스 효과를 제거합니다. */
+  border: 3px solid #C3DBF9 ;
+}
+
+
+
+
+button[type="button"] {
+  width: 100px;
+  padding: 10px;
+  color: #001777;
+  background-color: #ffffff;
+  border: 1px solid #375EFE;
+  border-radius: 3px;
+  cursor: pointer;
+  position: flex;
+  margin-left: 10px;
+  font-style: normal;
+  /* identical to box height */
+  letter-spacing: -0.05em;
+  font-size: 16px;
+  height: 50px;
+}
+
+button[type="button"]:hover {
+  font-weight: 600;
+  border: 2px solid #375EFE;
+}
+
+button[type="submit"] {
+  width: 500px; height: 60px;
+  padding: 10px;
+  background-color: #375EFE;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+button[type="submit"]:hover {
+  background-color: #FF6709;
+}
+
+.input-with-button {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+#footer{width: 1400px;  height: 450px; margin: 0 auto; margin-top: 200px;} 
+#footer>div{ margin-top: 100px; color: #737373;}
+#footer p:nth-of-type(2){ line-height: 30px; margin-top: 40px;}
+#footer p:nth-of-type(3){ margin-top: 40px; font-weight: bold;}

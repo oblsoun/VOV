@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/modifyInfo.css"> <!-- CSS 파일 경로를 수정하세요 -->
+    <title>회원 정보 수정</title>
+</head>
+<body>
+    <!--login header-->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+            <img src="../static/images/logo.jpg" alt="VOV 로고">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="indexLogOut.html">사진/동영상</a></li>
+                <li><a href="realTime.html">실시간</a></li>
+                <li><a href="myPhoto.html">내사진</a></li>
+            </ul>
+        </nav>
+        <div class="header-buttons">
+            <button class="login-button"><a href="index.html">로그아웃</a></button>
+            <button class="signup-button"><a href="signUp.html">회원가입</a></button>
+        </div>
+      </header>
+
+    <div class="pageTitle">
+    <h1>회원 정보 수정</h1>
+    </div>
+
+    <!--content-->
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="userid">아이디</label>
+                <div class="input-with-button">
+                    <input type="text" id="userid" name="userid" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">비밀번호 확인</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <div class="form-group">
+                <label for="username">이름</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">이메일</label>
+                <div class="input-with-button">
+                    <input type="email" id="email" name="email" required>
+                    <button type="button">코드전송</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">인증코드</label>
+                <div class="input-with-button">
+                    <input type="email" id="email" name="email" required>
+                    <button type="button">코드확인</button>
+                </div>
+            </div>
+            <button type="submit"><a href="myPage.html">수정 완료</a></button>
+        </form>
+
+    </div>
+    </div>  
+
+    <!--footer-->
+    <footer id="footer">
+        <div>
+        <p><a href="#"><img src="../static/images/footer_logo.png" alt="vov"></a></p>
+
+        <p>NOMERCY 주식회사<br>
+            서울특별시 서초구 서초대로74길 33<br>
+            사업자등록번호 230-10-09270<br>
+            고객상담 : 1588 - 1234</p>
+        <p>Copyright ⓒ VOV Corp. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

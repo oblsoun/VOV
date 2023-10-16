@@ -1,0 +1,210 @@
+<mxfile host="app.diagrams.net" modified="2023-08-24T00:10:01.545Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="rLxwR1uuSUlNDze4FMOm" version="21.6.9" type="device">
+  <diagram name="페이지-1" id="RtVaoxqfU_NgqGiEPCvg">
+    <mxGraphModel dx="948" dy="585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-1" value="Actor" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-2" value="Front" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="250" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-3" value="DB" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="670" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-4" value="Back" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-6" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="1140" as="sourcePoint" />
+            <mxPoint x="100" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-7" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="1140" as="sourcePoint" />
+            <mxPoint x="309.5" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-8" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="1140" as="sourcePoint" />
+            <mxPoint x="519.5" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-9" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="1140" as="sourcePoint" />
+            <mxPoint x="729.5" y="99" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-16" value="1. &amp;lt;로그인&amp;gt; 버튼 클릭" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="100" y="171" as="sourcePoint" />
+            <mxPoint x="310" y="171" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-17" value="1.1.아이디, 비밀번호 전달" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="309" y="221" as="sourcePoint" />
+            <mxPoint x="519" y="221" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-18" value="1.1.1. 아아디, 비밀번호 전달" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="520" y="271" as="sourcePoint" />
+            <mxPoint x="730" y="271" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-20" value="1.1.2. 존재 유무 결과값" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730" y="383" as="sourcePoint" />
+            <mxPoint x="520" y="383" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-21" value="1.2. 로그인 결과값" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="519" y="470" as="sourcePoint" />
+            <mxPoint x="309" y="470" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-23" value="2.1.2. session 저장" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="710" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="550" y="710" />
+              <mxPoint x="550" y="760" />
+            </Array>
+            <mxPoint x="520" y="760" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-24" value="2. 소셜 버튼 클릭" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="100" y="560" as="sourcePoint" />
+            <mxPoint x="310" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-25" value="2.1. API 호출 및 코드 전달" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="310" y="610" as="sourcePoint" />
+            <mxPoint x="520" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-26" value="2.2. 로그인 결과값" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="519" y="777" as="sourcePoint" />
+            <mxPoint x="309" y="777" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-27" value="2.1.1. API 서버 교류" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry x="-0.2308" y="10" relative="1" as="geometry">
+            <mxPoint x="520" y="620" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="550" y="620" />
+              <mxPoint x="550" y="690" />
+              <mxPoint x="525" y="690" />
+            </Array>
+            <mxPoint x="520" y="690" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-28" value="3. &amp;lt;로그아웃&amp;gt; 버튼 클릭" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="100" y="851" as="sourcePoint" />
+            <mxPoint x="310" y="851" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-29" value="3.1. 계정 정보 전달" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="309" y="901" as="sourcePoint" />
+            <mxPoint x="519" y="901" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-30" value="3.2. 로그아웃 결과값&amp;nbsp;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="519" y="1007" as="sourcePoint" />
+            <mxPoint x="309" y="1007" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-31" value="3.1.1. session 제거" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="921" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="550" y="921" />
+              <mxPoint x="550" y="991" />
+              <mxPoint x="525" y="991" />
+            </Array>
+            <mxPoint x="520" y="991" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-32" value="1.3. 결과 및 해당 메시지" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="514" as="sourcePoint" />
+            <mxPoint x="100" y="514" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-33" value="2.3. 결과 및 해당 메시지" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="811" as="sourcePoint" />
+            <mxPoint x="100" y="811" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-34" value="3.3. 결과 및 해당 메시지" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="1051" as="sourcePoint" />
+            <mxPoint x="100" y="1051" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-35" value="1.1.1.1.&lt;br&gt;존재 유무 확인" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry x="-0.0615" y="-21" relative="1" as="geometry">
+            <mxPoint x="731" y="289" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="761" y="289" />
+              <mxPoint x="761" y="359" />
+              <mxPoint x="736" y="359" />
+            </Array>
+            <mxPoint x="731" y="359" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-36" value="1.1.3. session 저장" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="403" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="550" y="403" />
+              <mxPoint x="550" y="453" />
+            </Array>
+            <mxPoint x="520" y="453" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-39" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="480" y="340" width="230" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-37" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" parent="FAJdFwpVglowaCSJ-Y2B-39" vertex="1">
+          <mxGeometry width="230" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-38" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;[true]&lt;/span&gt;" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" parent="FAJdFwpVglowaCSJ-Y2B-39" vertex="1">
+          <mxGeometry x="50" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-40" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="480" y="670" width="230" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-41" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=30;height=30;" parent="FAJdFwpVglowaCSJ-Y2B-40" vertex="1">
+          <mxGeometry width="230" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="FAJdFwpVglowaCSJ-Y2B-42" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;[true]&lt;/span&gt;" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" parent="FAJdFwpVglowaCSJ-Y2B-40" vertex="1">
+          <mxGeometry x="50" width="80" height="23.263157894736835" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,348 @@
+* { 
+  padding: 0; border: 0; list-style: none; margin: 0;
+  text-decoration: none;  box-sizing: border-box; letter-spacing: -0.5px;}
+
+button { cursor: pointer; font-family: 'GmarketSans'; }
+button a { 
+  color: inherit; /* 부모 요소의 글자색을 상속받음 */
+  text-decoration: none; /* 링크 텍스트에 밑줄 제거 */
+  cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능함을 나타냄 */
+  outline: none; /* 포커스 효과 제거 */
+  color: inherit; /* 클릭 시에도 부모 요소의 글자색을 상속받음 */
+}
+  body>* { margin: 0 auto; font-family: 'GmarketSans'; } 
+
+/* 헤더 */
+header {
+  width: 1400px; height: 100px;
+  color: #737373;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 100px;
+  margin: 0 auto;
+}
+
+.logo img {
+  cursor: pointer;
+}
+
+.logo a {
+  color: inherit; /* 부모 요소의 글자색을 상속받음 */
+  text-decoration: none; /* 링크 텍스트에 밑줄 제거 */
+  cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능함을 나타냄 */
+}
+
+.logo a a:focus,
+.logo a:active {
+  outline: none; /* 포커스 효과 제거 */
+  color: inherit; /* 클릭 시에도 부모 요소의 글자색을 상속받음 */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-left: 30px;
+}
+
+nav ul li { margin-right: 100px; }
+nav ul li:last-child { margin-right: 0; }
+nav a {
+  text-decoration: none;
+  color: #737373;
+  width: 80px;
+}
+
+nav a:hover {
+  color: #252B42; /* 원하는 색상으로 변경 */
+  text-decoration: underline; /* 밑줄 추가 */
+}
+
+.header-buttons button.login-button {
+  background: none;
+  border: solid #fff;
+  color: #737373;
+  padding: 10px 20px;
+  margin-right: 2px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.header-buttons button.login-button:hover {
+  color: #252B42; /* 원하는 색상으로 변경 */
+  text-decoration: underline; /* 밑줄 추가 */
+}
+
+.login-button a {
+  color: inherit; /* 부모 요소의 글자색을 상속받음 */
+  text-decoration: none; /* 링크 텍스트에 밑줄 제거 */
+  cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능함을 나타냄 */
+}
+
+.login-button a:focus,
+.login-button a:active {
+  outline: none; /* 포커스 효과 제거 */
+  color: inherit; /* 클릭 시에도 부모 요소의 글자색을 상속받음 */
+}
+
+
+.header-buttons button.signup-button {
+  width: 120px; height: 50px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #DEE1E3;
+  color: #737373;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.signup-button a {
+  color: inherit; /* 부모 요소의 글자색을 상속받음 */
+  text-decoration: none; /* 링크 텍스트에 밑줄 제거 */
+  cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능함을 나타냄 */
+}
+
+.signup-button a:focus,
+.signup-button a:active {
+  outline: none; /* 포커스 효과 제거 */
+  color: inherit; /* 클릭 시에도 부모 요소의 글자색을 상속받음 */
+}
+
+.header-buttons button.signup-button:hover {
+  color: #252B42; /* 원하는 색상으로 변경 */
+  text-decoration: underline; /* 밑줄 추가 */
+}
+
+.page-title {
+    width: 1400px;
+    height: 120px;
+    margin: 0 auto;
+}
+.page-title h1 {
+    margin-top: 80px;
+    text-align: center;
+    color: #252B42;
+}
+
+.gb-text {
+  width: 1400px; height: 30px; 
+}
+.gb-text ul { display: flex; }
+.gb-text li{ margin-top: 50px; margin-right: 75px;}
+.gb-text li:nth-of-type(2) { margin-left: 40px; font-size: 12px; color: #737373; margin-top: 53px;}
+.gb-text span{ color: #375EFE; font-weight: bold;}
+.progress-container {
+    width: 320px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    margin-right: 350px;
+    
+}
+.progress-bar {
+  height: 15px;
+  background-color: #375EFE;
+  border-radius: 20px;
+  transition: width 0.5s ease-in-out;
+}
+
+.page-add {
+  border-bottom: 1px solid #D9D9D9; 
+  width: 1400px; 
+  height: 120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center; /* 수직 정렬 중앙으로 설정 */
+}
+
+.page-add ul {
+  display: flex;
+
+}
+
+.page-add p.notice {
+  font-size: 15px;
+  width: 450px;
+  font-weight: inherit;
+  color: #737373;
+  margin-right: 200px;
+}
+
+.page-add button.down-btn {
+    width: 120px; height: 50px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #a9a9a9;
+    color: #fff;
+    margin-right: 20px;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  
+  .page-add button.down-btn:hover {
+    background-color: #FF6709;
+    font-weight: bold;
+  }
+  
+  .page-add button.del-btn {
+    border: 1px solid #737373;
+    background-color: #bdbebd;
+    width: 90px; height: 50px;
+    border-radius: 10px;
+    color: #001777;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .page-add button.del-btn:hover {
+    font-weight: 600;
+    border: 2px solid #375EFE;
+    font-weight: bold;
+  }
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    column-gap: 29px;
+    row-gap: 60px;
+    margin-top: 40px;
+}
+
+.box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.box {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  transition: background-color 0.3s;
+  max-width: 100%; /* 가로 최대 너비 설정 */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+input[type="checkbox"] {
+    position: absolute; /* 절대적 위치 설정 */
+    top: 10%; /* 박스 세로 중앙 정렬 */
+    left: 10%; /* 박스 가로 중앙 정렬 */
+    transform: translate(-50%, -50%); /* 가운데 정렬을 위한 변형 */
+
+    /* 체크박스의 배경색을 하얀색으로 유지 */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #fff; /* 배경색을 하얀색으로 설정 */
+    border: 1px solid #ccc; /* 테두리 추가 (선택 사항) */
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* 배경색 변경 애니메이션 */
+
+}
+
+/* 체크박스가 선택된 상태일 때 배경색 변경 */
+.box input[type="checkbox"]:checked {
+    background-color: #375EFE; /* 체크된 상태의 배경색 변경 */
+}
+
+/* 체크박스 체크 표시 스타일 변경 */
+.box input[type="checkbox"]::before {
+    content: "\2714"; /* 체크 표시에 유니코드 기호 사용 (체크 마크) */
+    font-size: 12px; /* 체크 표시 크기 조절 */
+    color: #fff; /* 체크 표시 색상 */
+    position: absolute; /* 절대 위치로 배치 */
+    top: 1px; /* 위쪽 여백 조절 */
+    left: 5px; /* 왼쪽 여백 조절 */
+    opacity: 0; /* 초기에는 보이지 않음 */
+    transition: opacity 0.3s; /* 체크 표시 나타날 때 애니메이션 */
+}
+
+/* 체크박스가 선택된 상태일 때 체크 표시 보이게 변경 */
+.box input[type="checkbox"]:checked::before {
+    opacity: 1; /* 체크 표시 보이기 */
+}
+
+.box p {
+    position: absolute; /* 절대적 위치 설정 */
+    top: 70%; /* 박스 아래에 위치 */
+    left: 50%; /* 가로 중앙 정렬 */
+    transform: translateX(-50%); /* 가운데 정렬을 위한 변형 */
+    font-size: 14px;
+    text-overflow: ellipsis; /* 길 경우 ...으로 생략 */
+    overflow: hidden; /* 생략된 텍스트 숨김 */
+    white-space: nowrap; /* 줄 바꿈 금지 */
+    color: #252B42;
+    margin-top: 15px;
+}
+
+.box p:last-child {
+    margin-top: 35px; /* 위 여백 추가 */
+    font-size: 12px;
+    color: #737373;
+}
+
+/* 체크박스가 선택된 상태일 때 스타일 변경 */
+.box input[type="checkbox"]:checked + .box {
+    border: 2px solid #3498db; /* 테두리 스타일 변경 (원하는 색상 및 두께로 조절) */
+}
+
+/* 마우스를 올렸을 때 스타일 변경 */
+.box:hover {
+    border: 2px solid #C3DBF9;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* This evenly spaces the boxes */
+  margin-bottom: 20px; /* Add some margin between rows */
+}
+
+.col-md-5 {
+  flex: 0 0 calc(33.33% - 10px); /* 3 columns per row (adjust as needed) */
+  max-width: calc(33.33% - 10px); /* Ensure boxes don't exceed 3 columns */
+  margin-bottom: 10px; /* Add some margin between columns */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+
+/* 페이징 넘버 만들기  */
+.pagination {
+  width: 1400px; height: 35px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+.pagination li {
+  margin: 5px;
+}
+
+.pagination a {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #333;
+}
+
+.pagination a:hover {
+  font-weight: bold;
+}
+
+/* 푸터 */
+#footer { width: 1400px;  height: 450px; margin: 0 auto; margin-top: 200px; } 
+#footer>div { margin-top: 100px; color: #737373; }
+#footer p:nth-of-type(2){ line-height: 30px; margin-top: 40px; }
+#footer p:nth-of-type(3){ margin-top: 40px; font-weight: bold; }
