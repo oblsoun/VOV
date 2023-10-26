@@ -1,6 +1,6 @@
 # :lock: 개인정보 비식별화 지원 서비스 개발
 
-[![시연영상](http://img.youtube.com/vi/z_S71TbysyU/0.jpg)](https://youtu.be/z_S71TbysyU)
+[![시연영상](http://img.youtube.com/vi/z_S71TbysyU/mqdefault.jpg)](https://youtu.be/z_S71TbysyU)
 
 ## :mag_right: 개요
 - 프로젝트 목적
