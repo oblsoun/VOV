@@ -34,23 +34,23 @@
 ### :hammer: 기술 스택
 - 서비스 구성도
   
-![service](https://github.com/oblsoun/nomercy/assets/113246634/7b7d23ec-a8d5-4e17-a5bc-f3f92b2e4a4b)
+![service](https://github.com/oblsoun/VOV/assets/113246634/76c2ac81-e25c-4754-928d-0a6546ee63d1)
 
 - 메뉴 구성도
 
-![menu](https://github.com/oblsoun/nomercy/assets/113246634/5e3f6af1-139f-4dc1-9fc1-dbf974e86096)
+![menu](https://github.com/oblsoun/VOV/assets/113246634/7295b80b-5f3f-40bb-b587-10217d5d778e)
   
 - UseCase
 
-![usecase](https://github.com/oblsoun/nomercy/assets/113246634/677f3b93-11d4-4f00-8d6d-4c956a6b2802)
+![usecase](https://github.com/oblsoun/VOV/assets/113246634/99ca9565-0974-43ad-9d2c-97a2b5302dab)
 
 - 알고리즘 명세서
   
-![model](https://github.com/oblsoun/nomercy/assets/113246634/ff895aaf-1013-4a5a-99fd-af69649b7b24)
+![model](https://github.com/oblsoun/VOV/assets/113246634/89694773-80e4-4659-a994-7b015470331d)
 
 ---
 ### :date: 테이블 설계
-![ERD](https://github.com/oblsoun/nomercy/assets/113246634/76dbc7e8-90e0-423d-9150-eeefe63b2fde)
+![ERD](https://github.com/oblsoun/VOV/assets/113246634/aebf455f-6f76-4bdc-8c5e-e6eadce66b91)
 
 ---
 ### :paperclip: 기타 링크
