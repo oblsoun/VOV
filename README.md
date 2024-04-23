@@ -3,6 +3,7 @@
 [![시연영상](http://img.youtube.com/vi/z_S71TbysyU/mqdefault.jpg)](https://youtu.be/z_S71TbysyU)
 
 ## :mag_right: 개요
+- 프로젝트 개
 - 프로젝트 목적
 - 프로젝트 아이디어 및 배경
 - 주요 기술
@@ -10,6 +11,18 @@
 - 테이블 설계
 - 기타 링크
 - --
+### 프로젝트 개요
+- 개발 기간: 2023. 08. ~ 2023. 10.
+- 개발 인원: 4
+- 개발 언어: Python
+- Dataset: Roboflow
+- Model: Yolov5m
+- Framework: Django
+- DB: AWS RDS(mariaDB)
+- IDE: Visual Studio Code
+- Library: OpenCV, Mediapipe, Numpy
+- ETC: UML, SonarQube, S3, SMTP, JQuery
+---
 ### :pushpin: 프로젝트 목적
 ##### 기획 의도
 - AI 기반의 생체 정보 보안을 위한 지문 비식별화
